@@ -25,6 +25,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          CI: false
         run: npm run build
 
       - name: Deploy to GitHub Pages
