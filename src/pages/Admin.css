@@ -1,0 +1,100 @@
+/* Admin Layout */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+    position: relative;
+    padding-top: 80px;
+    /* Account for fixed header */
+}
+
+.admin-main {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+    /* Subtract header height */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.admin-access-denied {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.access-denied-content {
+    text-align: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    max-width: 400px;
+}
+
+.access-denied-content i {
+    font-size: 4rem;
+    color: #ef4444;
+    margin-bottom: 1rem;
+}
+
+.access-denied-content h2 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.access-denied-content p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .admin-layout {
+        padding-top: 80px;
+        /* Maintain header spacing */
+    }
+
+    .admin-main {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-layout {
+        flex-direction: column;
+        padding-top: 80px;
+        /* Maintain header spacing */
+    }
+
+    .admin-main {
+        padding: 1rem;
+        margin-left: 0;
+        min-height: calc(100vh - 80px);
+        /* Account for header height */
+    }
+
+    .access-denied-content {
+        padding: 2rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-main {
+        padding: 0.5rem;
+    }
+
+    .access-denied-content {
+        padding: 1.5rem;
+    }
+}

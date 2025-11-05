@@ -1,0 +1,263 @@
+/* Booking Confirmation Styles */
+.booking-confirmation {
+    max-width: 600px;
+}
+
+.booking-details {
+    padding: 1rem 0;
+}
+
+.booking-id {
+    background: #f0f9ff;
+    color: #0369a1;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #bae6fd;
+}
+
+.detail-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.detail-section h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span:first-child {
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.detail-item span:last-child {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-confirmed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.total-section {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-confirmation {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-id {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .detail-section {
+        padding: 0.75rem;
+    }
+}
+.booking-confirmation {
+    max-width: 600px;
+}
+
+.booking-details {
+    padding: 1rem 0;
+}
+
+.booking-id {
+    background: #f0f9ff;
+    color: #0369a1;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #bae6fd;
+}
+
+.detail-section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.detail-section h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item span:first-child {
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.detail-item span:last-child {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-confirmed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.total-section {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-confirmation {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-id {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .detail-section {
+        padding: 0.75rem;
+    }
+}
