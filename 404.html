@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page not found — redirecting…</title>
+    <meta http-equiv="refresh" content="0;url=/" />
+    <script>
+      // SPA-friendly GitHub Pages fallback: load the app's index.html and render it.
+      // This helps when using BrowserRouter and a user refreshes or hits a deep-link.
+      (function () {
+        try {
+          fetch('/index.html')
+            .then(function (res) { return res.text(); })
+            .then(function (html) {
+              document.open();
+              document.write(html);
+              document.close();
+            });
+        } catch (e) {
+          // On error, fallback to a simple link
+          document.body.innerHTML = '<h1>Page not found</h1><p><a href="/">Go to home</a></p>';
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
