@@ -108,6 +108,20 @@ npm run build
 
 This creates a `build` folder with optimized production files.
 
+### Deploy to GitHub Pages (recommended for quick hosting)
+
+This repo includes a GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) that will build the app and publish the `build/` directory to GitHub Pages when you push to `main`.
+
+Steps to enable Pages automatically:
+1. Ensure this repository is pushed to GitHub and the `deploy-pages.yml` workflow is present.
+2. Push to `main` (the workflow runs automatically).
+3. In your repository on GitHub, go to Settings → Pages and confirm the Source is set to "GitHub Actions" (it will be configured automatically in most repos).
+
+Notes:
+- I added `homepage: "./"` to `package.json` so the build uses relative asset paths which works for project pages.
+- A `public/404.html` was also added to enable SPA fallbacks on GitHub Pages (prevents 404s on refresh for BrowserRouter).
+
+
 ## 🎯 Usage
 
 ### For Customers

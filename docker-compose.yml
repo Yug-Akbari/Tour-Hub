@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    image: tour-hub:latest
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
